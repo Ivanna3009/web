@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+      <header
+      class="mdc-top-app-bar app-bar mdc-top-app-bar--fixed"
+      id="app-bar"
+    >
+      <div class="mdc-top-app-bar__row">
+        <section
+          class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start"
+        >
+          <button
+            class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button"
+          >
+            menu
+          </button>
+          <button
+            class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button"
+          >
+            search
+          </button>
+        </section>
+        <section
+          class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end"
+          role="toolbar"
+        >
+          <button
+            class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button"
+          >
+            settings
+          </button>
+          <button
+            class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button"
+          >
+            logout
+          </button>
+        </section>
+      </div>
+    </header>
+    <aside
+      class="mdc-drawer mdc-drawer--dismissible mdc-top-app-bar--fixed-adjust"
+    >
+      <div class="mdc-drawer__header">
+        <h3 class="mdc-drawer__title">SMART</h3>
+      </div>
+      <div class="mdc-drawer__content">
+        <div class="mdc-list">
+          <a class="mdc-list-item" href="#" aria-current="page">
+            <span class="mdc-list-item__ripple"></span>
+            <i
+              class="material-icons mdc-list-item__graphic"
+              aria-hidden="true"
+              >home</i
+            >
+            <span class="mdc-list-item__text">Dashboard</span>
+          </a>
+          <a class="mdc-list-item" href="#">
+            <span class="mdc-list-item__ripple"></span>
+            <i
+              class="material-icons mdc-list-item__graphic"
+              aria-hidden="true"
+              >textsms</i
+            >
+            <span class="mdc-list-item__text">Messages</span>
+          </a>
+          <a class="mdc-list-item" href="#">
+            <span class="mdc-list-item__ripple"></span>
+            <i
+              class="material-icons mdc-list-item__graphic"
+              aria-hidden="true"
+              >filter_alt</i
+            >
+            <span class="mdc-list-item__text">UI Elements</span>
+          </a>
+          <a class="mdc-list-item" href="#" aria-current="page">
+            <span class="mdc-list-item__ripple"></span>
+            <i
+              class="material-icons mdc-list-item__graphic"
+              aria-hidden="true"
+              >pie_chart</i
+            >
+            <span class="mdc-list-item__text">Charts</span>
+          </a>
+          <a class="mdc-list-item" href="#" aria-current="page">
+            <span class="mdc-list-item__ripple"></span>
+            <i
+              class="material-icons mdc-list-item__graphic"
+              aria-hidden="true"
+              >event</i
+            >
+            <span class="mdc-list-item__text">Calendar</span>
+          </a>
+          <li class="mdc-list-divider" role="separator"></li>
+          <a class="mdc-list-item" href="#" aria-current="page">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">User</span>
+          </a>
+          <a class="mdc-list-item" href="#" aria-current="page">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Security</span>
+          </a>
+          <a class="mdc-list-item" href="#" aria-current="page">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Customers</span>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+      <div class="mdc-drawer-app-content mdc-top-app-bar--fixed-adjust">
+        <main class="main-content" id="main-content">
+          <div class="top-blocks">
+            <div class="top-block">
+              <div class="first-inside inside">
+                <span class="material-icons">
+                  local_atm
+                </span>
+              </div>
+              <div class="aside-inside">
+                <h4 class="blue">TOTAL SALES</h4>
+                <h5>$215,645</h5>
+              </div>
+            </div>
+            <div class="top-block">
+              <div class="second-inside inside">
+                <span class="material-icons">
+                  poll
+                </span>
+              </div>
+              <div class="aside-inside">
+                <h4 class="blue">NEW QUOTE</h4>
+                <h5>523,543</h5>
+              </div>
+            </div>
+            <div class="top-block">
+              <div class="third-inside inside">
+                <span class="material-icons">
+                  fiber_smart_record
+                </span>
+              </div>
+              <div class="aside-inside">
+                <h4 class="purple">ORDERS</h4>
+                <h5>23,414</h5>
+              </div>
+            </div>
+            <div class="top-block">
+              <div class="fourth-inside inside">
+                <span class="material-icons">
+                  view_in_ar
+                </span>
+              </div>
+              <div class="aside-inside">
+                <h4 class="green">PRODUCTS</h4>
+                <h5>19,087</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="line-chart-blocks">
+            <div class="first-chart">
+              <canvas id="firstChart"></canvas>
+            </div>
+            <div class="little-chart-blocks">
+              <div class="second-chart">
+                <canvas id="secondChart"></canvas>
+              </div>
+              <div class="third-chart">
+                <canvas id="thirdChart"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <div class="third-block">
+            <div class="donut-chart">
+              <canvas id="donutChart"></canvas>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <h4>Ononto Jolil</h4>
+                <h5>Joker in Dhallywood</h5>
+              </div>
+              <div class="card-content">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                culpa qui officia deserunt mollit anim id est laborum."</p>
+              </div>
+              <div class="card-statistics">
+                <div class="card-statistics-item">
+                  <h1>179</h1>
+                  <h5>Customers</h5>
+                </div>
+                <div class="card-statistics-item center">
+                  <h1>19K</h1>
+                  <h5>Products</h5>
+                </div>
+                <div class="card-statistics-item">
+                  <h1>15K</h1>
+                  <h5>Followers</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="table">
+            <div class="table-header">
+              <h2>Customer Ratings</h2>
+              <div class="table-header-block">
+                <p>2,45,567 Votes</p>
+                <span class="material-icons">
+                  sync
+                </span>
+              </div>
+            </div>
+            <div class="table-body">
+              <div class="table-body-block">
+                <div class="table-body-block-item-first">
+                  <span class="material-icons emoji-green">
+                    insert_emoticon
+                  </span>
+                  The product is awesome
+                </div>
+                <div class="table-body-block-item-second">
+                  <div class="table-bar">
+                    <div class="green-bar"></div>
+                  </div>
+                </div>
+                <div class="table-body-block-item-third">67%</div>
+              </div>
+              <div class="table-body-block">
+                <div class="table-body-block-item-first">
+                  <span class="material-icons emoji-blue">
+                    sentiment_satisfied_alt
+                  </span>
+                  Yeah, I`m satisfied with it
+                </div>
+                <div class="table-body-block-item-second">
+                  <div class="table-bar">
+                    <div class="blue-bar"></div>
+                  </div>
+                </div>
+                <div class="table-body-block-item-third">25%</div>
+              </div>
+              <div class="table-body-block">
+                <div class="table-body-block-item-first">
+                  <span class="material-icons emoji-yellow">
+                    sentiment_dissatisfied
+                  </span>
+                  Average product, not bad
+                </div>
+                <div class="table-body-block-item-second">
+                  <div class="table-bar">
+                    <div class="yellow-bar"></div>
+                  </div>
+                </div>
+                <div class="table-body-block-item-third">7%</div>
+              </div>
+              <div class="table-body-block">
+                <div class="table-body-block-item-first">
+                  <span class="material-icons emoji-red">
+                    mood_bad
+                  </span>
+                  Not usefull at all it sucks
+                </div>
+                <div class="table-body-block-item-second">
+                  <div class="table-bar">
+                    <div class="red-bar"></div>
+                  </div>
+                </div>
+                <div class="table-body-block-item-third">15%</div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+
+    <script src="bundle.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./linechart.js"></script>
+  </body>
+</html>

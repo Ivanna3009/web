@@ -1,0 +1,12 @@
+{
+  "fistChartLabels": ["Jan" , "Feb", "Mar", "Apr", "May", "Jun"],
+  "fisrtChartData": [31000, 30000, 28000, 30000, 38500, 32000],
+  "secondChartLabels": ["" , "", "", "", "", ""],
+  "secondChartDataFirst": [15500, 15000, 10000, 19000, 15000, 12500],
+  "secondChartDataSecond": [31000, 30000, 20000, 38000, 30000, 25000],
+  "thirdChartLabels": ["" , "", "", "", "", ""],
+  "thirdChartDataFIrst": [12500, 16000, 14000, 12500, 15000, 12500],
+  "thirdChartDataSecond": [25000, 32000, 28000, 25000, 30000, 25000],
+  "donutChartLabels": ["Bounce", "Visitors", "Registered"],
+  "donutChartData": [25, 65, 10]
+}
